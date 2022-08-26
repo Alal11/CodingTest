@@ -13,10 +13,10 @@ int main()
 			arr[i][j] = arr[i][j - 1] + arr[i - 1][j];		// 사람들의 합을 arr[i][j]에 넣어준다
 	}
 		}
-	scanf_s("%d", &test);		        // test case의 수 입력
+	scanf("%d", &test);		        // test case의 수 입력
 
 	for (i = 1; i <= test; i++) {
-		scanf_s("%d %d", &k, &n);
+		scanf("%d %d", &k, &n);
 		printf("%d\n", arr[k][n]);
 	}
 	
