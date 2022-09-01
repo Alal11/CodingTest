@@ -3,7 +3,6 @@
 int main(void)
 {
 	int a, b;
-	char bg;
 
 	scanf("%d %d", &a, &b);
 
