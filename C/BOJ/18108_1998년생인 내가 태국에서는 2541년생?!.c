@@ -6,7 +6,7 @@ int main(void)
 
 	scanf("%d", &bg);
 
-	sg = bg - 544;
+	sg = bg - 543;
 	printf("%d\n", sg);
 
 	return 0;
