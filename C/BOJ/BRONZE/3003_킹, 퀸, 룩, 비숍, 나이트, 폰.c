@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
 	int a, b, c, d, e, f, aa, bb, cc, dd, ee, ff;
 
