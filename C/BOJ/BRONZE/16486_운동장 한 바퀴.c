@@ -8,7 +8,7 @@ int main(void)
 
 	scanf("%d %d", &d1, &d2);
 
-	dr = 2 * d1 + 2 * d2 * PI;
+	dr = 2 * d1 + 2 * d2 * PI;		// 운동장 둘레 구하는 식
 	printf("%f\n", dr);
 
 	return 0;
