@@ -18,6 +18,7 @@ int main(void)
 
 
 // 코드 간단화
+
 #include <stdio.h>
 
 int main(void)
