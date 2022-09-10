@@ -7,8 +7,9 @@ int main(void)
 
 	scanf("%d", &num);
 
-	for (i = 1; num >= i; i++)
+	for (i = 1; num >= i; i++) {
 		result = result * i;
+	}
 
 	printf("%d", result);
 
