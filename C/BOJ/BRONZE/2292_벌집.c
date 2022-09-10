@@ -6,12 +6,12 @@ int main(void)
 
     scanf("%d", &n);
 
-    if (n == 1)             // 1인 경우 1을 출력
+    if (n == 1)                   // 1인 경우 1을 출력
     {
         printf("%d", 1);
         return 0;
     }
-    while (1)               // 무한 반복문
+    while (1)                     // 무한 반복문
     {
         if (i <= n && i + j >= n) 
         {
