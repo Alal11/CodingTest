@@ -1,10 +1,8 @@
 import sys
-
-arr = []
-n = int(input())
+input = sys.stdin.readline
 
 
-def addDigit(x):
+def sum_num(x):
     result = 0
     for i in x:
         if i.isdigit() == True:
@@ -12,10 +10,13 @@ def addDigit(x):
     return result
 
 
-for _ in range(n):
-    arr.append(str(sys.stdin.readline().rstrip()))
+arr = []
+n = int(input())
 
-arr.sort(key=lambda x: (len(x), addDigit(x), x))
+for _ in range(n):
+    arr.append(str(input().rstrip()))
+
+arr.sort(key=lambda x: (len(x), sum_num(x), x))
 
 for i in arr:
     print(i)
