@@ -1,3 +1,4 @@
+// 풀이 1
 #include <stdio.h>
 
 int main(void)
@@ -27,8 +28,7 @@ int main(void)
 	return 0;
 }
 
-
-// 다른 풀이
+// 풀이 2
 #include <stdio.h>
 
 int main() {
