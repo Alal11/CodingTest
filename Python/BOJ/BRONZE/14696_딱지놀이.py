@@ -9,10 +9,10 @@ for i in range(N):
     list_B = [B.count(4), B.count(3), B.count(2), B.count(1)]
 
     for j in range(0, 4):
-        if (list_A[j] > list_B[j]):
+        if list_A[j] > list_B[j]:
             hi.append("A")
             break
-        elif (list_A[j] < list_B[j]):
+        elif list_A[j] < list_B[j]:
             hi.append("B")
             break
         elif j == 3:

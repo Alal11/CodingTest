@@ -1,5 +1,5 @@
 N = int(input())
-card = list(range(1, N+1))
+card = list(range(1, N + 1))
 
 cardx = []
 

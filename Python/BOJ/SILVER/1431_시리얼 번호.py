@@ -5,7 +5,7 @@ input = sys.stdin.readline
 def sum_num(x):
     result = 0
     for i in x:
-        if i.isdigit() == True:
+        if i.isdigit():
             result += int(i)
     return result
 

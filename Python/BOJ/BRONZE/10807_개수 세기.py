@@ -1,5 +1,4 @@
 n = int(input())
-nums = []
 
 nums = list(map(int, input().split(" ")))
 

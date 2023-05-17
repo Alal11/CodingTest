@@ -1,7 +1,7 @@
 from collections import deque
 import sys
-input = sys.stdin.readline
 
+input = sys.stdin.readline
 
 n = int(input())
 
@@ -11,10 +11,11 @@ for _ in range(n):
 
 visit = []
 for _ in range(n):
-    visit.append([False]*n)
+    visit.append([False] * n)
 
 dx = [1, 0]
 dy = [0, 1]
+
 
 def bfs(x, y, visit):
     queue = deque()
@@ -28,8 +29,8 @@ def bfs(x, y, visit):
 
         jump = board[x][y]
         for i in range(2):
-            nx = x+dx[i]*jump
-            ny = y+dy[i]*jump
+            nx = x + dx[i] * jump
+            ny = y + dy[i] * jump
             if 0 <= nx < n and 0 <= ny < n and visit[nx][ny] == 0:
                 visit[nx][ny] = True
                 queue.append((nx, ny))

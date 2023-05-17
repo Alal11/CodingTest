@@ -13,7 +13,6 @@ for i in music:
     if i[0] in ga_short:
         ga_cnt += 1
 
-
 if da_cnt == ga_cnt:
     if last in da_long:
         da_cnt += 1

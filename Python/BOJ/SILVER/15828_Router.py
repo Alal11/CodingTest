@@ -1,5 +1,5 @@
 from collections import deque
-import  sys
+import sys
 
 input = sys.stdin.readline
 
@@ -17,7 +17,6 @@ while True:
 
     elif x != 0 and len(buffer) != n:
         buffer.append(x)
-
 
 if len(buffer) == 0:
     print("empty")
