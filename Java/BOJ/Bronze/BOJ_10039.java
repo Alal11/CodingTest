@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Main {
+// 평균 점수
+public class BOJ_10039 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
