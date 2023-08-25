@@ -6,14 +6,14 @@ public class BOJ_2744{
 
         String str=sc.next();
 
-        String result="";
+        StringBuilder result= new StringBuilder();
 
         for(char x:str.toCharArray()){
             if(Character.isLowerCase(x)){
-                result+=Character.toUpperCase(x);
+                result.append(Character.toUpperCase(x));
             }
             else{
-                result+=Character.toLowerCase(x);
+                result.append(Character.toLowerCase(x));
             }
         }
         System.out.println(result);
