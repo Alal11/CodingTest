@@ -24,5 +24,6 @@ public class BOJ_11005 {
             num /= jb;
         }
         System.out.println(sb.reverse());
+        
     }
 }
