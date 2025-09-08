@@ -1,0 +1,42 @@
+package silver;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class BOJ_1735 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int a1 = Integer.parseInt(st.nextToken());
+        int b1 = Integer.parseInt(st.nextToken());
+        st = new StringTokenizer(br.readLine());
+        int a2 = Integer.parseInt(st.nextToken());
+        int b2 = Integer.parseInt(st.nextToken());
+
+        int down = b1 * b2;
+        int up = (a1 * b2) + (a2 * b1);
+
+        int cnt = 2;
+        while (true) {
+            if (down % cnt == 0) {
+                if (up % cnt == 0) {
+                    up /= cnt;
+                    down /= cnt;
+                } else {
+                    cnt++;
+                }
+            } else {
+                cnt++;
+            }
+
+            if (cnt > down || cnt > up) {
+                break;
+            }
+        }
+        System.out.println(up + " " + down);
+    }
+}
+
